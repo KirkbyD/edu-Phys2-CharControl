@@ -1,0 +1,384 @@
+{
+  "Entities": [
+    {
+      "Name": "Ground",
+      "Transform": {
+        "Position": "0.0f 0.0f 0.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Box",
+          "Position": "0.0f 0.0f 0.0f",
+          "HalfExtents": "256.0f 1.0f 256.0f",
+          "Mass": ".0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Quad",
+          "Texture": "GrassTerrain",
+          "Scale": "512.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Death Plane",
+      "Transform": {
+        "Position": "0.0f -50.0f 0.0f",
+        "Orientation": "0.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f -50.0f 0.0f",
+          "Normal": "0.0f 1.0f 0.0f"
+        }
+      ]
+    },
+    {
+      "Name": "-X Slope",
+      "Transform": {
+        "Position": "-500.0f 20.0f 0.0f",
+        "Orientation": "0.0f 0.0f -20.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Box",
+          "Position": "-256.0f 0.0f 0.0f",
+          "HalfExtents": "256.0f 1.0f 256.0f",
+          "Mass": ".0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Quad",
+          "Texture": "GrassTerrain",
+          "Scale": "512.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Health Potion",
+
+      "Transform": {
+        "Position": "150.0f 10.0f 100.0f",
+        "Orientation": "-90.0f 0.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Box",
+          "Position": "150.0f 10.0f 100.0f",
+          "HalfExtents": "3.f, 3.f, 7.f",
+          "Mass": "1.f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Potion",
+          "Mesh": "Potion",
+          "Texture": "PotionRed",
+          "Scale": "3.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Tree",
+      "Transform": {
+        "Position": "0.0f 0.0f 0.0f",
+        "Orientation": "0.f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Capsule",
+          "Position": "50.0f 0.0f 200.0f",
+          "Radius": "7.f",
+          "Height": "90.f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "AppleTree",
+          "Mesh": "AppleTree",
+          "Texture": "AppleTree",
+          "Scale": ".25f"
+        }
+      ]
+    },
+    {
+      "Name": "Rocks",
+      "Transform": {
+        "Position": "0.0f 0.0f 0.0f",
+        "Orientation": "0.0f 75.0f 0.f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "TriangleMesh",
+          "Mesh": "Rocks",
+          "Position": "0.0f 20.0f -200.0f",
+          "Scale": "40.f, 40.f, 40.f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Rocks",
+          "Mesh": "Rocks",
+          "Texture": "Rocks",
+          "Scale": "40.f"
+        }
+      ]
+    },
+    {
+      "Name": "Bonfire",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Capsule",
+          "Position": "0.0f 0.0f 100.0f",
+          "Height": "30.f",
+          "Radius": "5.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "0.0f 0.0f 100.0f",
+          "HalfExtents": "12.f, 3.f, 12.f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Bonfire",
+          "Mesh": "Bonfire",
+          "Texture": "Bonfire",
+          "Scale": ".0625f"
+        }
+      ]
+    },
+    {
+      "Name": "Teapot",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Capsule",
+          "Position": "0.0f 10.0f 75.0f",
+          "Height": "30.f",
+          "Radius": "11.f"
+        }
+      ]
+    },
+    {
+      "Name": "Invisible Stairs!",
+      "Transform": {
+        "Position": "5.f 5.f -5.f",
+        "Orientation": "0.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Box",
+          "Position": "256.0f 0.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "257.0f 1.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "258.0f 2.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "259.0f 3.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "260.0f 4.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "261.0f 5.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "262.0f 6.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "263.0f 7.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "264.0f 8.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "265.0f 9.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "266.0f 10.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "267.0f 11.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "268.0f 12.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "269.0f 13.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        },
+        {
+          "Shape": "Box",
+          "Position": "270.0f 14.0f 0.0f",
+          "HalfExtents": "1.f, .5.f, 50.f"
+        }
+      ]
+    },
+    {
+      "Name": "Elf",
+      "Transform": {
+        "Position": "100.0f 0.f 100.0f",
+        "Orientation": "90.0f 0.0f 0.0f",
+        "Scale": "1.0f"
+      },
+      "Physics": [
+        {
+          "Shape": "Character",
+          "Radius": "10.f",
+          "Height": "40.f",
+          "StepHeight": "5.f",
+          "Position": "100.0f 100.f 100.0f"
+        }
+      ],
+      "Anima": [
+        {
+          "Name": "Elf",
+          "File": "data/models/elf/chara_f_elf_bind_pose.fbx",
+          "Scale": "0.3",
+          "Animations": [
+            {
+              "Name": "Idle",
+              "File": "data/models/elf/chara_f_elf_idle.fbx"
+            },
+            {
+              "Name": "WalkF",
+              "File": "data/models/elf/chara_f_elf_forward_walk.fbx"
+            },
+            {
+              "Name": "RunF",
+              "File": "data/models/elf/chara_f_elf_forward_run.fbx"
+            },
+            {
+              "Name": "WalkB",
+              "File": "data/models/elf/chara_f_elf_backwards_walk.fbx"
+            },
+            {
+              "Name": "RunB",
+              "File": "data/models/elf/chara_f_elf_backwards_run.fbx"
+            },
+            {
+              "Name": "WalkL",
+              "File": "data/models/elf/chara_f_elf_strafe_left_walk.fbx"
+            },
+            {
+              "Name": "RunL",
+              "File": "data/models/elf/chara_f_elf_strafe_left_run.fbx"
+            },
+            {
+              "Name": "WalkR",
+              "File": "data/models/elf/chara_f_elf_strafe_right_walk.fbx"
+            },
+            {
+              "Name": "RunR",
+              "File": "data/models/elf/chara_f_elf_strafe_right_run.fbx"
+            },
+            {
+              "Name": "JumpF",
+              "File": "data/models/elf/chara_f_elf_jump_forward.fbx"
+            },
+            {
+              "Name": "JumpB",
+              "File": "data/models/elf/chara_f_elf_jump_backward.fbx"
+            },
+            {
+              "Name": "TurnL",
+              "File": "data/models/elf/chara_f_elf_left_turn.fbx"
+            },
+            {
+              "Name": "TurnR",
+              "File": "data/models/elf/chara_f_elf_right_turn.fbx"
+            },
+            {
+              "Name": "IdleToFight",
+              "File": "data/models/elf/chara_f_elf_transition_idle_unarmed.fbx"
+            },
+            {
+              "Name": "FightToIdle",
+              "File": "data/models/elf/chara_f_elf_transition_unarmed_idle.fbx"
+            },
+            {
+              "Name": "Punch",
+              "File": "data/models/elf/chara_f_elf_unarmed_attack.fbx"
+            },
+            {
+              "Name": "FightIdle",
+              "File": "data/models/elf/chara_f_elf_unarmed_idle.fbx"
+            },
+            {
+              "Name": "DodgeL",
+              "File": "data/models/elf/chara_f_elf_standing_left_dodge.fbx"
+            },
+            {
+              "Name": "DodgeR",
+              "File": "data/models/elf/chara_f_elf_standing_right_dodge.fbx"
+            },
+            {
+              "Name": "Fall",
+              "File": "data/models/elf/Fall A Loop.fbx"
+            },
+            {
+              "Name": "Land",
+              "File": "data/models/elf/Falling To Landing.fbx"
+            },
+            {
+              "Name": "Death",
+              "File": "data/models/elf/Falling Back Death.fbx"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
